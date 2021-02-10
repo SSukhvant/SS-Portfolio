@@ -1,6 +1,6 @@
 <?php
 
-$name = $_REQUEST['Name'];
+$name = $_REQUEST['name'];
 $email = $_REQUEST['Email'];
 $message = $_REQUEST['Message'];
 
