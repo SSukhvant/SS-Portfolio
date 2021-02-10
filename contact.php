@@ -15,5 +15,4 @@ else
     window.history.log(-1);
     </script>";
 }
-
 ?>
