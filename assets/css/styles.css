@@ -219,6 +219,7 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 /*BUTTONS*/
@@ -244,10 +245,12 @@ img{
 }
 .about__img{
   justify-self: center;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 .about__img img{
   width: 200px;
   border-radius: .5rem;
+  
 }
 
 /* ===== SKILLS =====*/
@@ -304,6 +307,7 @@ img{
 }
 .skills__img{
   border-radius: .5rem;
+  box-shadow: 0 1.2rem 2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 /* ===== WORK =====*/
@@ -321,6 +325,26 @@ img{
 }
 .work__img img:hover{
   transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.work__img:hover .overlay {
+  opacity: 1;
 }
 
 /* ===== CONTACT =====*/
@@ -418,6 +442,7 @@ img{
   .home__img{
     width: 457px;
     bottom: 15%;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
   }
 
   .about__container, .skills__container{
@@ -427,6 +452,7 @@ img{
   }
   .about__img img{
     width: 300px;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
