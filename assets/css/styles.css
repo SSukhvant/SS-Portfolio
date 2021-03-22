@@ -58,7 +58,8 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+ /** color: var(--second-color); **/
+ background-color: #ECF0F3;
 }
 h1,h2,p{
   margin: 0;
